@@ -12,6 +12,9 @@
 		0FA7D6EE1FA004C000F3D188 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA7D6EC1FA004C000F3D188 /* Main.storyboard */; };
 		0FA7D6F01FA004C000F3D188 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FA7D6EF1FA004C000F3D188 /* Assets.xcassets */; };
 		0FA7D6F31FA004C000F3D188 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FA7D6F11FA004C000F3D188 /* LaunchScreen.storyboard */; };
+		0FA7D6FD1FA0283E00F3D188 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0FA7D6FA1FA00A3900F3D188 /* GoogleService-Info.plist */; };
+		0FA7D6FF1FA0289900F3D188 /* FirebaseStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0FA7D6FE1FA0289900F3D188 /* FirebaseStorage.swift */; };
+		13F8432B423795A7E86F1D9F /* Pods_From_Classic_Movies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 988B8501BF85B34DD15249FB /* Pods_From_Classic_Movies.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		0FA7D6EF1FA004C000F3D188 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0FA7D6F21FA004C000F3D188 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0FA7D6F41FA004C000F3D188 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0FA7D6FA1FA00A3900F3D188 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0FA7D6FE1FA0289900F3D188 /* FirebaseStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseStorage.swift; sourceTree = "<group>"; };
+		78FFE7D374B3E6538A31B620 /* Pods-From Classic Movies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-From Classic Movies.release.xcconfig"; path = "Pods/Target Support Files/Pods-From Classic Movies/Pods-From Classic Movies.release.xcconfig"; sourceTree = "<group>"; };
+		988B8501BF85B34DD15249FB /* Pods_From_Classic_Movies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_From_Classic_Movies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B682ED40C8C9CDC335C7FFA0 /* Pods-From Classic Movies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-From Classic Movies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-From Classic Movies/Pods-From Classic Movies.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F8432B423795A7E86F1D9F /* Pods_From_Classic_Movies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				0FA7D6E71FA004C000F3D188 /* From Classic Movies */,
 				0FA7D6E61FA004C000F3D188 /* Products */,
+				9EF42630B997E44644A0781C /* Pods */,
+				35B36FD0939C50FCFA61FB11 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,7 +65,9 @@
 		0FA7D6E71FA004C000F3D188 /* From Classic Movies */ = {
 			isa = PBXGroup;
 			children = (
+				0FA7D6FA1FA00A3900F3D188 /* GoogleService-Info.plist */,
 				0FA7D6E81FA004C000F3D188 /* AppDelegate.swift */,
+				0FA7D6FE1FA0289900F3D188 /* FirebaseStorage.swift */,
 				0FA7D6EA1FA004C000F3D188 /* ViewController.swift */,
 				0FA7D6EC1FA004C000F3D188 /* Main.storyboard */,
 				0FA7D6EF1FA004C000F3D188 /* Assets.xcassets */,
@@ -64,6 +77,23 @@
 			path = "From Classic Movies";
 			sourceTree = "<group>";
 		};
+		35B36FD0939C50FCFA61FB11 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				988B8501BF85B34DD15249FB /* Pods_From_Classic_Movies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EF42630B997E44644A0781C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B682ED40C8C9CDC335C7FFA0 /* Pods-From Classic Movies.debug.xcconfig */,
+				78FFE7D374B3E6538A31B620 /* Pods-From Classic Movies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA7D6F71FA004C000F3D188 /* Build configuration list for PBXNativeTarget "From Classic Movies" */;
 			buildPhases = (
+				9525C9FF2A416842273B2E6A /* [CP] Check Pods Manifest.lock */,
 				0FA7D6E11FA004C000F3D188 /* Sources */,
 				0FA7D6E21FA004C000F3D188 /* Frameworks */,
 				0FA7D6E31FA004C000F3D188 /* Resources */,
+				E66C820450F4CC11771C69F5 /* [CP] Embed Pods Frameworks */,
+				DB0E16947A2F4D59F7BC882B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -124,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0FA7D6F31FA004C000F3D188 /* LaunchScreen.storyboard in Resources */,
+				0FA7D6FD1FA0283E00F3D188 /* GoogleService-Info.plist in Resources */,
 				0FA7D6F01FA004C000F3D188 /* Assets.xcassets in Resources */,
 				0FA7D6EE1FA004C000F3D188 /* Main.storyboard in Resources */,
 			);
@@ -131,12 +165,71 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9525C9FF2A416842273B2E6A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-From Classic Movies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB0E16947A2F4D59F7BC882B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-From Classic Movies/Pods-From Classic Movies-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E66C820450F4CC11771C69F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-From Classic Movies/Pods-From Classic Movies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-From Classic Movies/Pods-From Classic Movies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0FA7D6E11FA004C000F3D188 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0FA7D6EB1FA004C000F3D188 /* ViewController.swift in Sources */,
+				0FA7D6FF1FA0289900F3D188 /* FirebaseStorage.swift in Sources */,
 				0FA7D6E91FA004C000F3D188 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,13 +365,14 @@
 		};
 		0FA7D6F81FA004C000F3D188 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B682ED40C8C9CDC335C7FFA0 /* Pods-From Classic Movies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Z352Y84Y;
 				INFOPLIST_FILE = "From Classic Movies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.standford.cs193o.lecture.From-Classic-Movies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fromClassicMovie.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -287,13 +381,14 @@
 		};
 		0FA7D6F91FA004C000F3D188 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78FFE7D374B3E6538A31B620 /* Pods-From Classic Movies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49Z352Y84Y;
 				INFOPLIST_FILE = "From Classic Movies/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.standford.cs193o.lecture.From-Classic-Movies";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fromClassicMovie.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
